@@ -1,0 +1,26 @@
+baseURL = 'https://compilingleadership.com/'
+locale = 'en-us'
+title = 'Compiling Leadership'
+
+enableRobotsTXT = true
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "Notes on leadership, written by an engineer."
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
