@@ -4,50 +4,25 @@ title = 'Compiling Leadership'
 theme = 'PaperMod'
 
 enableRobotsTXT = true
-enableEmoji = true
 pygmentsUseClasses = true
-
-[pagination]
-  pagerSize = 10
-
-[minify]
-  disableXML = true
 
 [params]
   env = "production"
   description = "Notes on leadership, written by an engineer."
   defaultTheme = "auto"
-  disableThemeToggle = false
-  ShowReadingTime = true
+  disableThemeToggle = true
+  hideFooter = true
+  ShowReadingTime = false
   ShowShareButtons = false
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowWordCount = false
-  ShowRssButtonInSectionTermList = true
-  ShowToc = true
-  TocOpen = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = false
+  ShowRssButtonInSectionTermList = false
+  ShowToc = false
   comments = false
-  hidemeta = false
+  disableScrollToTop = true
 
-  [params.homeInfoParams]
-    Title = "Compiling Leadership"
-    Content = "Notes on leadership, written by an engineer."
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-[[menu.main]]
-  name = "Posts"
-  url = "/posts/"
-  weight = 1
-
-[[menu.main]]
-  name = "About"
-  url = "/about/"
-  weight = 2
-
-[[menu.main]]
-  name = "Search"
-  url = "/search/"
-  weight = 3
+  [params.profileMode]
+    enabled = true
+    title = "Compiling Leadership"
+    subtitle = "Notes on leadership, written by an engineer. More soon."
