@@ -1,26 +1,53 @@
 baseURL = 'https://compilingleadership.com/'
 locale = 'en-us'
 title = 'Compiling Leadership'
+theme = 'PaperMod'
 
 enableRobotsTXT = true
 enableEmoji = true
+pygmentsUseClasses = true
 
 [pagination]
   pagerSize = 10
 
-[params]
-  description = "Notes on leadership, written by an engineer."
+[minify]
+  disableXML = true
 
-[menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
-    weight = 2
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 3
+[params]
+  env = "production"
+  description = "Notes on leadership, written by an engineer."
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+  TocOpen = false
+  comments = false
+  hidemeta = false
+
+  [params.homeInfoParams]
+    Title = "Compiling Leadership"
+    Content = "Notes on leadership, written by an engineer."
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 1
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+[[menu.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 3
